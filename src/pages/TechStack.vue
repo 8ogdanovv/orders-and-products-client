@@ -123,6 +123,12 @@
         </a>
         <p>Vite</p>
       </div>
+      <div class="technology">
+        <a href="https://pnpm.io/" target="_blank">
+          <img src="https://d33wubrfki0l68.cloudfront.net/2f3acb83b7d2349f2194bc38c0f22f295908dc33/43f95/img/pnpm-no-name-with-frame.svg" alt="Vite" />
+        </a>
+        <p>pnpm</p>
+      </div>
     </div>
   </div>
 </template>
