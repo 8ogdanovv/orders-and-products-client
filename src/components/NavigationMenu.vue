@@ -39,7 +39,7 @@ export default {
       { id: 'nav-link-2', label: 'PRODUCTS', route: routes.find((r) => r.path === '/products') },
       { id: 'nav-link-3', label: 'USERS', route: routes.find((r) => r.path === '/users') },
       { id: 'nav-link-4', label: 'SETTINGS', route: routes.find((r) => r.path === '/settings') },
-      { id: 'nav-link-5', label: 'TECHNOLOGIES', route: routes.find((r) => r.path === '/tech-stack') },
+      { id: 'nav-link-5', label: 'THE STACK', route: routes.find((r) => r.path === '/tech-stack') },
     ]);
 
     const isSelected = (routePath) => {
@@ -205,6 +205,12 @@ export default {
   width: 100%;
   opacity: 1;
   transition: opacity 0.5s;
+}
+
+@media (max-width: 720px) {
+  .show-area {
+    padding: 2rem 1rem 15dvh 1rem;
+  }
 }
 
 .fade-enter-active,

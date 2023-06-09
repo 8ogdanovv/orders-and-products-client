@@ -42,7 +42,7 @@ export default {
   height: 3rem;
   display: flex;
   justify-content: space-between;
-  padding-left: 7.5rem;
+  padding-left: 5rem;
   align-items: center;
   background-color: white;
   z-index: 5;
@@ -68,9 +68,9 @@ export default {
 
 .search {
   height: 1.25rem;
-  width: 24%;
   display: inline-flex;
-  margin: 0 auto 0 7rem;
+  width: 25%;
+  margin: 0 0 0 auto;
 }
 
 .search::placeholder {
@@ -82,4 +82,18 @@ export default {
   font-weight: 500;
 }
 
+@media (max-width: 560px) {
+  .top-menu {
+    padding-left: 1rem;
+  }
+
+  .home-link {
+    font-size: 0.5em;
+  }
+
+  .home-image {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 </style>

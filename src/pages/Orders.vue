@@ -131,7 +131,6 @@ export default {
 
 
 <style>
-
 .orders-head {
   display: flex;
   align-items: center;
@@ -179,4 +178,34 @@ export default {
   transition: all 0.5s;
 }
 
+@media (max-width: 320px) {
+  .orders-add {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .orders-add-plus {
+    font-size: 1.2rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .orders-head {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .orders-add {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .orders-add-plus {
+    font-size: 1.4rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
 </style>

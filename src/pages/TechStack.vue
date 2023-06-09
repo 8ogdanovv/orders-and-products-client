@@ -172,4 +172,26 @@
 .technology p {
   margin-top: 0.5rem;
 }
+
+@media (max-width: 720px) {
+  .technology-stack {
+    gap: 0.5rem;
+  }
+
+  .technology {
+    height: 20dvh;
+  }
+
+.technology img,
+.vue-logo {
+  width: min-content;
+  max-width: 50px;
+}
+
+p:last-of-type:not(.not-to-be-margined) {
+  margin-bottom: 15dvh;
+}
+
+
+}
 </style>

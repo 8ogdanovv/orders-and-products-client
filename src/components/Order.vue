@@ -7,7 +7,7 @@
     <div class="info-short">
       <div class="quantity">
         <img src="../assets/List-Icon.svg.png" alt="list icon" class="list-icon">
-        <p class="quantity-number">{{ getQuantity }}</p>
+        <div class="quantity-number">{{ getQuantity }}</div>
       </div>
 
       <div class="order-date">{{ formattedDate }}</div>
@@ -90,8 +90,8 @@ export default {
 
 <style>
 .delete-order {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   display: flex;
   border: none;
   align-items: center;
@@ -101,18 +101,18 @@ export default {
 
 .delete-order:hover {
   background-color: #0008;
-  border-radius: 1rem;
-  box-shadow: 0 0 0.5rem 0.5rem gray;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0.25rem 0.25rem gray;
   transition: all 500ms;
 }
 
 .delete-order-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .delete-order-icon:hover {
-  box-shadow: 0 0 1rem gray;
+  box-shadow: 0 0 0.5rem gray;
   transition: all 500ms;
 }
 
@@ -120,21 +120,23 @@ export default {
   font-weight: 600;
   opacity: 0.8;
 }
+
 .order {
   display: flex;
   align-items: center;
-  max-height: 12dvh;
+  justify-content: space-between;
+  max-height: 10vh;
   cursor: pointer;
-  gap: 1rem;
+  gap: 0.5rem;
   border: 1px solid gray;
   border-radius: 0.5rem;
   width: 100%;
   transition: all 0.5s;
-  padding: 0.5dvh;
+  padding: 0.5vh;
 }
 
 .order:hover {
-  box-shadow: 0 0 2.5rem #00000088;
+  box-shadow: 0 0 1.5rem #00000088;
   transform: scale(1.05);
 }
 
@@ -144,48 +146,79 @@ export default {
   align-items: center;
   text-decoration: underline;
   text-decoration-color: gray;
-  margin: 0.5rem;
+  margin: 0.25rem;
+  font-size: 0.8rem;
 }
 
 .orders-sum {
   display: flex;
   flex-direction: column;
-  height: 10dvh;
-  width: 6dvw;
+  height: 8vh;
+  width: 5vw;
   justify-content: center;
   align-items: center;
-  gap: 1dvh;
+  gap: 0.5vh;
 }
 
 .info-short {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .list-icon {
-  width: 3dvh;
+  width: 2vh;
 }
 
 .quantity {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
+  height: 100%;
 }
 
 .quantity-number {
-  height: 3dvh;
-  font-size: 2dvh;
-  line-height: 3dvh;
-  position: relative;
-  top: 0.5dvh;
+  height: 2vh;
+  font-size: 1.5vh;
+  line-height: 2vh;
 }
 
 .order-date {
   width: max-content;
-  font-size: 1.5dvh;
+  font-size: 1vh;
   position: relative;
-  bottom: 0.25dvh;
+  bottom: 0.125vh;
 }
 
+@media (max-width: 720px) {
+  .order {
+    height: 25vh;
+    padding: 0.25vh;
+  }
+
+  .order-title {
+    margin: 0.125rem;
+    font-size: 0.5rem;
+  }
+
+  .orders-sum {
+    height: 4vh;
+    width: 4vw;
+    gap: 0.25vh;
+    font-size: 50%;
+  }
+
+  .list-icon {
+    width: 2vh;
+  }
+
+  .quantity-number {
+  }
+
+  .order-date {
+    font-size: 1.5vh;
+    bottom: 0.0625vh;
+  }
+}
 </style>
+

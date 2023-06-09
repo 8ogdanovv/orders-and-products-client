@@ -250,4 +250,45 @@ export default {
   display: inline-flex;
   margin-left: 0.5rem;
 }
+
+@media (max-width: 720px) {
+
+  .name {
+    font-size: 75%;
+  }
+  .add-order {
+    padding: 0 1rem;
+  }
+
+  .add-order-title {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .item {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    height: 35dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .label-name {
+    max-width: 75%;
+  }
+
+  .name .checkbox {
+    max-width: 3rem;
+  }
+
+  .flex {
+    width: 60%;
+    flex-direction: column;
+  }
+
+  .add-order-submit {
+    font-size: 1rem;
+  }
+}
 </style>

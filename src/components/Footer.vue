@@ -100,4 +100,14 @@ export default {
     height: 2dvh;
     background: linear-gradient(0deg, gold 50%, navy 50%);
   }
+
+    @media (max-width: 720px) {
+    .footer {
+      text-align: center;
+    }
+
+    .dZEN {
+      width: 11vw;
+    }
+  }
 </style>
